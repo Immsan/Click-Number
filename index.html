@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+      body {
+         height: 100vh;
+         background: linear-gradient(140deg, rgb(160, 129, 245), rgb(54, 18, 95));
+      }
+
+      .header {
+         text-align: center;
+      }
+
+      .main-text {
+         text-transform: uppercase;
+         color: rgb(29, 241, 15);
+      }
+
+      .wrapper {
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-around;
+         max-width: 90vw;
+      }
+
+      .game-1,
+      .game-2 {
+         background: linear-gradient(to bottom, rgb(165, 59, 122), rgb(101, 3, 3));
+         max-width: 40vw;
+         min-height: 450px;
+         border: 1px solid red;
+         padding: 0 2vw;
+         border-radius: 6px;
+         
+      }
+
+      .game-1>p,
+      .game-2>p,
+       ol>li {
+         font-size: 2.2vw;
+         color: rgb(253, 243, 130);
+      }
+
+      .game-1>a,
+      .game-2>a {
+         padding-top: 10px;
+         text-decoration: none;
+         color: rgb(0, 0, 0);
+         background-color: rgb(29, 241, 15);
+         padding: 2vh 2vw;
+         border-radius: 10px;
+         font-weight: bold;
+         text-transform: uppercase;
+         box-shadow: #2fb726 3px 5px 7px 3px;
+         border: 1px solid rgb(0, 0, 0);
+         margin-top: 1vh;
+         
+      }
+
+      a:hover {
+         box-shadow: #0b6604 3px 5px 7px 3px;
+      }
+
+   </style>
+</head>
+<body>
+   <div class="header">
+      <h2>Эта страница с заданием <span class="main-text">Игра "Собери 10 зеленых квадратов"<span></h2>
+   </div>
+
+   <div class="wrapper">
+      <div class="game-1">
+         <h1> Вариант №1</h1>
+         <p>Этот вариант игры самый простой, блоки построены на таблице. Генератор генерирует номера столбца и номера
+            строки. Также здесь используеться BootStrap и jQuery</p><br>
+         <a href="./index-1.html" class="btn btn-primary" type="button">Вариант 1</a>
+      </div>
+      <div class="game-2">
+         <h1> Вариант №2</h1>
+         <p>Эта версия игры визуально немного от первого варианта:</p>
+         <ol>
+            <li>Таблица сделанна на GRID</li>
+            <li>Вначале сделал паузу 3 сек.</li>
+            <li>Сделал вывод динамической информации о количесве ходов промахах и попаданий.</li>
+            <li>Изменил визуальный стиль.</li>
+         </ol>
+         <br>
+         <a href="./index-2.html" class="btn btn-primary" type="button">Вариант 2</a>
+      </div>
+
+   </div>
+   <script src="./js/jquery-3.4.1.min.js"></script>
+   <script src="./js/bootstrap.bundle.min.js"></script>
+   
+
+</body>
+</html>
